@@ -40,4 +40,4 @@ jobs:
         with:
           resourceGroupName: adfajexample66
           template: datafactoryhgatzfoizufru/ARMTemplateForFactory.json
-          parameters: datafactoryhgatzfoizufru/ARMTemplateForFactory.json factoryName=${{ vars.FACTORY_NAME }}
+          parameters: datafactoryhgatzfoizufru/ARMTemplateForFactory.json factoryName=${{ vars.FACTORY_NAME }} ArmtemplateStorageLinkedService_connectionString="DefaultEndpointsProtocol=https;AccountName=storagehgatzfoizufru;" AzurePostgreSql1_connectionString="host=testdb13.postgres.database.azure.com;port=5432;database=postgres;uid=admin13;encryptionmethod=0;timeout=666;commandtimeout=0"
