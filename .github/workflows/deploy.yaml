@@ -21,7 +21,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
       - uses: azure/arm-deploy@v1
         with:
-          resourceGroupName: Synapse
+          resourceGroupName: adfajexample66
           template: datafactoryhgatzfoizufru/ARMTemplateForFactory.json
           parameters: datafactoryhgatzfoizufru/ARMTemplateForFactory.json factoryName=${{ vars.FACTORY_NAME }} 
   Deploy_Prod:
@@ -38,6 +38,6 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
       - uses: azure/arm-deploy@v1
         with:
-          resourceGroupName: Synapse
+          resourceGroupName: adfajexample66
           template: datafactoryhgatzfoizufru/ARMTemplateForFactory.json
           parameters: datafactoryhgatzfoizufru/ARMTemplateForFactory.json factoryName=${{ vars.FACTORY_NAME }}
